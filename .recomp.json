@@ -1,0 +1,13 @@
+{
+  "$schema": "https://recomp.fyi/schema/v1.json",
+  "game": "Echo Night 2 - Nemuri no Shihaisha",
+  "system": "PS1",
+  "type": "recomp",
+  "toolchain": "psxrecomp",
+  "status": "exploring",
+  "project": "echo-night-2-nemuri-no-shihaisha-recomp",
+  "original": {
+    "region": "Japan",
+    "serial": "SLPS-02167"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "cue_path": "disc/Echo Night 2 - Nemuri no Shihaisha (Japan).cue",
+  "cue_name": "Echo Night 2 - Nemuri no Shihaisha (Japan).cue",
+  "bin_name": "Echo Night 2 - Nemuri no Shihaisha (Japan).bin",
+  "track_count": 1,
+  "data_track_size": 349234368,
+  "data_track_md5": "7f57d3c2b5b9fc25f0783115da106903",
+  "data_track_sha1": "77fc59e0d2f892ffcf3dbd099749d1527f157c8c",
+  "data_track_crc32": "6eff036c",
+  "boot_exe": "SLPS_021.67",
+  "serial": "SLPS-02167",
+  "serial_exe": "SLPS_021.67",
+  "volume_id": "SLPS_02167",
+  "display_name": "Echo Night 2 - Nemuri no Shihaisha",
+  "load_address": "0x80010000",
+  "entry_pc": "0x80010008",
+  "text_size": "0x00000800",
+  "stack_base": "0x801FFFF0",
+  "require_cue": true,
+  "required_disc_fp": "84fdb0d600b11505585ee196022659240008a373ba556a85d74660766758fb70",
+  "boot_exe_sha256": "1276353e5ffc1665998e1f707613fce201e5df7e02e05c2fe035ab33b4aa95b2",
+  "boot_exe_size": 4096,
+  "boot_exe_page_crc32": [
+    "07a45d28"
+  ],
+  "seed_count": 11,
+  "warnings": [
+    "cue has only 1 TRACK — Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

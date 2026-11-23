@@ -1,0 +1,14 @@
+# Auto-scanned JAL targets (+ entry) from SLPS_021.67
+# entry=0x80010008 load=0x80010000 text_size=0x800
+# First-pass only — add overlay / runtime discoveries as you decomp.
+0x80010000
+0x80010008
+0x800100C4
+0x80010170
+0x80010180
+0x80010190
+0x800101A0
+0x800101B8
+0x800101D0
+0x800101E0
+0x800101F0

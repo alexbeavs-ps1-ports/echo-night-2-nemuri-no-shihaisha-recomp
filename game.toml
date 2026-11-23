@@ -1,0 +1,59 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Echo Night 2 - Nemuri no Shihaisha"
+id = "SLPS-02167"
+players = 1
+exe = "disc/SLPS_021.67"
+disc = "disc/Echo Night 2 - Nemuri no Shihaisha (Japan).cue"
+discs = ["disc/Echo Night 2 - Nemuri no Shihaisha (Japan).cue"]
+disc_serials = ["SLPS-02167"]
+load_address = "0x80010000"
+entry_pc = "0x80010008"
+text_size = "0x00000800"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "Echo Night 2 - Nemuri no Shihaisha (Japan).bin"
+cue_name = "Echo Night 2 - Nemuri no Shihaisha (Japan).cue"
+boot_exe = "SLPS_021.67"
+known_sizes = [349234368]
+known_md5 = [
+  "7f57d3c2b5b9fc25f0783115da106903",
+]
+known_sha1 = [
+  "77fc59e0d2f892ffcf3dbd099749d1527f157c8c",
+]
+known_crc32 = [
+  "6eff036c",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH5500.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "Echo Night 2 - Nemuri no Shihaisha Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "84fdb0d600b11505585ee196022659240008a373ba556a85d74660766758fb70"

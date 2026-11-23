@@ -1,0 +1,98 @@
+{
+  "format_version": 1,
+  "id": "echo-night-2-nemuri-no-shihaisha-psx",
+  "name": "Echo Night 2 - Nemuri no Shihaisha",
+  "kind": "recomp",
+  "platform": "psx",
+  "source_repo": "echo-night-2-nemuri-no-shihaisha-recomp",
+  "rom_identity": {
+    "crc32": [
+      "6eff036c"
+    ],
+    "md5": [
+      "7f57d3c2b5b9fc25f0783115da106903"
+    ],
+    "sha1": [
+      "77fc59e0d2f892ffcf3dbd099749d1527f157c8c"
+    ],
+    "disc_serials": [
+      "SLPS-02167"
+    ],
+    "sizes": [
+      349234368
+    ],
+    "filenames": [
+      "Echo Night 2 - Nemuri no Shihaisha (Japan).cue",
+      "Echo Night 2 - Nemuri no Shihaisha (Japan).bin"
+    ],
+    "track_counts": [
+      1
+    ],
+    "disc_fps": [
+      "84fdb0d600b11505585ee196022659240008a373ba556a85d74660766758fb70"
+    ],
+    "require_cue": true
+  },
+  "rom_extensions": [
+    ".cue",
+    ".bin",
+    ".chd"
+  ],
+  "bios_identity": {
+    "required": true,
+    "name": "SCPH5500.BIN",
+    "profile": "SCPH5500",
+    "crc32": [
+      "ff3eeb8c"
+    ],
+    "md5": [
+      "8dd7d5296a650fac7319bce665a6a53c"
+    ],
+    "sha1": [
+      "b05def971d8ec59f346f2d9ac21fb742e3eb6917"
+    ],
+    "sha256": [
+      "9c0421858e217805f4abe18698afea8d5aa36ff0727eb8484944e00eb5e7eadb"
+    ],
+    "sizes": [
+      524288
+    ],
+    "filenames": [
+      "SCPH5500.BIN"
+    ]
+  },
+  "release": {
+    "github": "alexbeavs-ps1-ports/echo-night-2-nemuri-no-shihaisha-recomp",
+    "allow_prerelease": false,
+    "asset_glob": {
+      "windows-x64": "echo-night-2-nemuri-no-shihaisha-*-windows-x64.zip",
+      "linux-x64": "echo-night-2-nemuri-no-shihaisha-*-linux-x64.zip",
+      "macos-arm64": "echo-night-2-nemuri-no-shihaisha-*-macos-arm64.zip",
+      "macos-x64": "echo-night-2-nemuri-no-shihaisha-*-macos-x64.zip"
+    }
+  },
+  "launch": {
+    "windows": "echo_night_2_nemuri_no_shihaisha.exe",
+    "linux": "echo_night_2_nemuri_no_shihaisha",
+    "macos": "echo_night_2_nemuri_no_shihaisha"
+  },
+  "build": {
+    "source": {
+      "github": "alexbeavs-ps1-ports/echo-night-2-nemuri-no-shihaisha-recomp",
+      "ref": ""
+    },
+    "toolchain": {
+      "id": "cmake-clang-v1",
+      "min_version": "1.0.14"
+    },
+    "generate": {
+      "engine": "psxrecomp",
+      "config": "game.toml"
+    },
+    "cmake": {
+      "build_dir": "build",
+      "target": "psx-runtime",
+      "config": "Release"
+    }
+  }
+}
